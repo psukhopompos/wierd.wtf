@@ -6,3 +6,10 @@
 @import "base";      // Basic element styling, resets
 @import "layout";    // Header, footer, main content area structure
 @import "wierd";     // Styles specific to the artifacts, previews, vibe
+
+.artifact-content {
+  // Add styles for the main content area of an artifact
+  // Example: Add some padding or adjust font size
+  padding: 1rem 0;
+  white-space: pre-wrap; // Preserve whitespace and line breaks
+}
