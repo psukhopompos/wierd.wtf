@@ -1,8 +1,7 @@
 ---
-# Front matter tells Jekyll to process this file
 ---
 
-// Import Sass partials
+ // Import Sass partials
 @import "variables"; // Define colors, fonts, etc. first
 @import "base";      // Basic element styling, resets
 @import "layout";    // Header, footer, main content area structure
