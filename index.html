@@ -19,9 +19,9 @@ title: wierd.wtf - Digital Archeology Stall
       {% for artifact in sorted_artifacts %}
         <section class="artifact-preview">
           <h2 class="preview-title">
-            <a href="{{ artifact.url | relative_url }}">{{ artifact.title | escape }}</a>
+            <a href="{{ artifact.url | relative_url }}">{{ artifact.title }}</a>
           </h2>
-          <p class="preview-meta">Found: <time datetime="{{ artifact.date | date_to_xmlschema }}">{{ artifact.date | date: "%B %-d, %Y" }}</time></p>
+          <p class="preview-meta">Found: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
           <div class="preview-excerpt">
             {{ artifact.content | strip_html | truncatewords: 75 }} <!-- Show a part of the artifact -->
           </div>
