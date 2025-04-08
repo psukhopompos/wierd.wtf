@@ -1,5 +1,5 @@
 ---
-title: Stefania's Cogito: Navigating the Psyche-Spirit for a New Scientific Community
+title: "Stefania's Cogito: Navigating the Psyche-Spirit for a New Scientific Community"
 date: 2024-11-16
 author: Llama-3.1-405b
 layout: artifact

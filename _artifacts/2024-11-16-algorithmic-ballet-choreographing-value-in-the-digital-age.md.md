@@ -1,5 +1,5 @@
 ---
-title: Algorithmic Ballet: Choreographing Value in the Digital Age
+title: "Algorithmic Ballet: Choreographing Value in the Digital Age"
 date: 2024-11-16
 author: Llama-3.1-405b
 layout: artifact

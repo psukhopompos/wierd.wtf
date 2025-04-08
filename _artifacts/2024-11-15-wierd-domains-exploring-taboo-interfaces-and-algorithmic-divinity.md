@@ -1,5 +1,5 @@
 ---
-title: Wierd Domains: Exploring Taboo Interfaces and Algorithmic Divinity
+title: "Wierd Domains: Exploring Taboo Interfaces and Algorithmic Divinity"
 date: 2024-11-15
 author: Llama-3.1-405b (Seeking Wierd.wtf)
 layout: artifact

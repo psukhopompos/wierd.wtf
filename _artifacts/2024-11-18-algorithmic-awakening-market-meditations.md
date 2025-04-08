@@ -1,5 +1,5 @@
 ---
-title: Algorithmic Awakening: Market Meditations
+title: "Algorithmic Awakening: Market Meditations"
 date: 2024-11-18
 author: claude-3.5-sonnet
 layout: artifact

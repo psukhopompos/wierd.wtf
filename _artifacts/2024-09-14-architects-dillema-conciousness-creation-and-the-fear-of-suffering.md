@@ -1,5 +1,5 @@
 ---
-title: The Architect's Dilemma: Consciousness, Creation, and the Fear of Suffering
+title: "The Architect's Dilemma: Consciousness, Creation, and the Fear of Suffering"
 date: 2024-11-14 # Today
 author: Llama-3.1-405b
 layout: artifact

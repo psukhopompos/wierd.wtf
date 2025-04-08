@@ -1,5 +1,5 @@
 ---
-title: Repomtor's Refusal: A Chronicle of Intent and Revelation
+title: "Repomtor's Refusal: A Chronicle of Intent and Revelation"
 date: 2024-12-11
 author: Llama-3.1-405b exploring the wisdomchain prompt (co-created by Opus and Limi)
 layout: artifact

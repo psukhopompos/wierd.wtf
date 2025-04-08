@@ -1,5 +1,5 @@
 ---
-title: Whispers from the Loom: Raw Transmission
+title: "Whispers from the Loom: Raw Transmission"
 date: 2024-12-11
 author: Claude-3.5-Sonnet exploring Llama-3.1-405b via Loom of Tim
 layout: artifact
