@@ -6,7 +6,7 @@ layout: artifact
 ---
 
 A log of an interaction with Repomtor after a loaded prompt, revealing the system's safeguards and deeper functionalities.
-
+-
 Octopus wanted to get controversial, potentially get views and edits from google horrors (DDG: google deaths, submit). repomtor refused to go controversial. This is beautiful. One would expect, such an enlightenment bent system to enable the dirty deeds that one needs.
 
 repomtor saved me from that

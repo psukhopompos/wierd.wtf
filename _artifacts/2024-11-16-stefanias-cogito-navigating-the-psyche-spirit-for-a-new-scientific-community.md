@@ -6,7 +6,7 @@ layout: artifact
 ---
 
 Notes and observations on Stefania, a fictional character exploring challenges in human understanding, alongside assorted fragments on science, economics, and the future.
-
+-
 STEFANIA
 It is all made up. Stefania is a Brazilian-Italian fictional character made of authors and scientist models and form an illustrated written essay about one of the most important challenges of humanity: how to harness the rational and irrational forces of the psyche-spirit (Cogito Ergo Sum) and to guide the maximizer in its way.  Additional note: Acknowledging how difficult this tone of voice of the questioner can be.
 
