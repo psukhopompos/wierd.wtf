@@ -11,5 +11,11 @@
   // Add styles for the main content area of an artifact
   // Example: Add some padding or adjust font size
   padding: 1rem 0;
-  white-space: pre-wrap; // Preserve whitespace and line breaks
+  // white-space: pre-wrap; // We removed this as <pre> handles whitespace preservation
+
+  pre {
+    white-space: pre-wrap; // Allows lines to wrap while preserving whitespace
+    word-wrap: break-word; // Helps break long words that might still overflow
+    font-family: inherit;  // Optional: Use the parent's font instead of default monospace
+  }
 }
