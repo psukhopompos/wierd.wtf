@@ -1,0 +1,44 @@
+// --- Color Palette ---
+// Deep Shadows & Base
+$color-background: #111; // Very dark grey, almost black
+$color-text: #c0c0c0;     // Light grey for readability
+$color-shadow-deep: #0a0a0a;
+
+// Soft Pastels (for accents, borders, subtle highlights)
+$color-pastel-1: #D8BFD8; // Lavender-ish
+$color-pastel-2: #B0E0E6; // Powder blue-ish
+
+// Bold Muted Tones (for grounding elements, maybe links)
+$color-muted-bold-1: #4a4e69; // Muted purple/blue
+$color-muted-bold-2: #6a7d81; // Muted teal/grey
+
+// Natural Neon Accents (Use *very* sparingly - e.g., active states, special markers)
+$color-neon-1: #9BF6FF; // Cyan glow
+$color-neon-2: #A0FFC0; // Mint glow
+
+// Links
+$color-link: $color-muted-bold-1;
+$color-link-hover: $color-neon-1;
+
+// --- Typography ---
+// Reflecting Duality: Code/Structure vs Ancient/Found Text (Using Google Font names)
+$font-primary: 'Source Code Pro', monospace; // For code-like feel, structure, maybe titles?
+$font-secondary: 'Merriweather', serif;    // For artifact content, evoking found text
+$base-font-size: 16px;
+$base-line-height: 1.7; // Slightly increased for readability
+$base-font-weight: 400;
+$bold-font-weight: 700;
+
+// --- Textures (Conceptual mapping to CSS) ---
+// Rough-hewn glass: Use borders, background opacity, maybe slight blur
+$texture-glass-border: 1px solid rgba($color-pastel-2, 0.3); // Slightly softer alpha
+// Warm velvet / Worn sand: Use background colors, subtle box-shadows or noise
+$texture-velvet-bg: darken($color-muted-bold-1, 15%);
+// $texture-sand-noise: url('/assets/images/subtle-noise.png'); // Example if using image texture
+
+// --- Layout ---
+$content-width: 800px;
+$spacing-unit: 30px; // Base unit for margins/padding
+
+// --- Transitions ---
+$base-transition-speed: 0.2s;

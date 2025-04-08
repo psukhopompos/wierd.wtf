@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <!-- Add potential webfont links here if needed (e.g., Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <!-- Include Jekyll Feed Plugin Meta Tags (optional) -->
+  {% feed_meta %}
+</head>
+<body class="theme-wierd"> {# Apply base class for styling #}
+
+  {% include header.html %}
+
+  <main class="site-content wrapper" aria-label="Content"> {# Added wrapper class here #}
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>

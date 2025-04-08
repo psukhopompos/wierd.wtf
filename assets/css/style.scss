@@ -1,0 +1,5 @@
+// Import Sass partials
+@import "variables"; // Define colors, fonts, etc. first
+@import "base";      // Basic element styling, resets
+@import "layout";    // Header, footer, main content area structure
+@import "wierd";     // Styles specific to the artifacts, previews, vibe

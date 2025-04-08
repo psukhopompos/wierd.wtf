@@ -1,0 +1,210 @@
+// Styles specific to the wierd theme elements
+
+// Homepage - Stall Front
+.stall-front {
+    .stall-introduction {
+      text-align: center;
+      padding: $spacing-unit * 1.5 0; // Reduced padding slightly
+      margin-bottom: $spacing-unit * 2;
+  
+      h1 { // Main site title on homepage
+        color: $color-neon-2; // Use neon green/mint maybe
+        font-size: 3em; // Larger on homepage
+        margin-bottom: $spacing-unit / 3;
+        text-shadow: 0 0 10px rgba($color-neon-2, 0.4);
+      }
+  
+      .stall-pitch {
+        font-style: italic;
+        color: $color-pastel-2; // Powder blue for the pitch
+        font-size: 1.2em;
+        max-width: 600px; // Keep pitch width reasonable
+        margin: 0 auto $spacing-unit * 1.5 auto;
+      }
+  
+      // Use a specific class for the divider horizontal rule
+      .intro-divider {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba($color-pastel-1, 0), rgba($color-pastel-1, 0.75), rgba($color-pastel-1, 0));
+        margin: $spacing-unit * 1.5 auto; // Center it
+        width: 50%; // Make it shorter than full width
+      }
+  
+      .recent-findings-title {
+          color: $color-pastel-1; // Lavender for this subtitle
+          font-family: $font-primary;
+          font-size: 1.3em;
+          margin-top: $spacing-unit * 1.5;
+      }
+    }
+  }
+  
+  // List of Artifact Previews on Homepage
+  .artifact-list {
+    .artifact-preview {
+      background-color: rgba($color-muted-bold-2, 0.1); // Subtle background tint
+      border: $texture-glass-border; // The defined glassy border
+      padding: $spacing-unit * 1.2;
+      margin-bottom: $spacing-unit * 2;
+      border-radius: 5px; // Slightly rounded corners
+      position: relative; // For potential future pseudo-elements
+      overflow: hidden; // Ensure effects don't spill out
+  
+      // Add a very subtle inner shadow or background texture if desired
+      // box-shadow: inset 0 0 15px rgba($color-shadow-deep, 0.3);
+  
+      // Glassy effect attempt (Use with caution - performance/support)
+      // backdrop-filter: blur(2px); // Requires background transparency
+  
+      .preview-title {
+        margin-top: 0;
+        margin-bottom: $spacing-unit / 4;
+        font-size: 1.6em;
+  
+        a {
+          color: $color-pastel-1; // Use a pastel for preview titles
+          &:hover,
+          &:focus {
+            color: $color-neon-1; // Neon hover for titles
+            text-decoration: none;
+          }
+        }
+      }
+  
+      .preview-meta {
+        font-size: 0.85em;
+        color: darken($color-text, 15%); // Darker meta text
+        margin-bottom: $spacing-unit / 1.5;
+        font-family: $font-primary; // Use monospace for dates
+      }
+  
+      .preview-excerpt {
+        margin-bottom: $spacing-unit;
+        color: lighten($color-text, 5%); // Slightly lighter excerpt text
+      }
+  
+      .read-more-link {
+        display: inline-block;
+        font-weight: $bold-font-weight;
+        font-family: $font-primary;
+        letter-spacing: 0.5px;
+        font-size: 0.9em;
+        color: $color-link; // Use standard link color
+        border: 1px solid $color-link;
+        padding: 0.3em 0.8em;
+        border-radius: 3px;
+        transition: all $base-transition-speed ease-in-out;
+  
+  
+        &:hover,
+        &:focus {
+          background-color: $color-link;
+          color: $color-background; // Invert colors on hover
+          text-decoration: none;
+          text-shadow: none; // Remove text-shadow on button hover
+          border-color: $color-link;
+          box-shadow: 0 0 8px rgba($color-neon-1, 0.5); // Glow effect
+        }
+      }
+  
+      // Add a subtle transition on hover for the whole box
+      transition: transform $base-transition-speed ease-in-out, box-shadow $base-transition-speed ease-in-out;
+      &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 5px 20px rgba($color-shadow-deep, 0.7);
+      }
+    }
+  }
+  
+  // Single Artifact Page - The Scroll
+  .artifact-scroll {
+    .artifact-header {
+      border-bottom: 1px dashed $color-muted-bold-1;
+      margin-bottom: $spacing-unit * 1.5;
+      padding-bottom: $spacing-unit;
+    }
+  
+    .artifact-title {
+      color: $color-neon-1; // Neon for the main artifact title
+      font-size: 2.8em; // Larger title on its own page
+      text-align: center;
+      margin-bottom: $spacing-unit / 4;
+      text-shadow: 0 0 10px rgba($color-neon-1, 0.4);
+    }
+  
+    .artifact-meta {
+      font-size: 0.9em;
+      color: $color-pastel-1;
+      font-family: $font-primary; // Monospace for date
+      text-align: center;
+      opacity: 0.8;
+      margin-bottom: 0;
+    }
+  
+    .artifact-content {
+      padding-top: $spacing-unit;
+      // Styles for p, ul, ol, blockquote, code, etc., are handled in _base.scss
+      // Add specific overrides here if needed for artifact content
+      h2, h3, h4 { // Adjust subheadings within artifacts
+          color: $color-pastel-2; // Use the other pastel for subheadings
+      }
+    }
+  }
+  
+  // Newer/Older Artifact Navigation
+  .artifact-navigation {
+    margin-top: $spacing-unit * 3;
+    border-top: 1px dashed $color-muted-bold-1;
+    padding-top: $spacing-unit * 1.5;
+  
+    .artifact-nav-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap; // Allow wrapping on small screens
+      justify-content: space-between;
+      font-family: $font-primary; // Monospace for nav text
+      font-size: 0.9em;
+    }
+  
+    .nav-item {
+      margin-bottom: $spacing-unit / 2; // Space if they wrap
+      a, span {
+        display: block; // Make the whole area clickable/visible
+        padding: 0.5em;
+        border-radius: 3px;
+      }
+  
+      a {
+        color: $color-muted-bold-2; // Use muted tone for nav links
+        border: 1px solid transparent; // Placeholder for hover effect
+        transition: all $base-transition-speed ease-in-out;
+        &:hover,
+        &:focus {
+          color: $color-neon-2; // Neon green/mint on hover
+          background-color: rgba($color-muted-bold-1, 0.2);
+          border-color: rgba($color-neon-2, 0.4);
+          text-decoration: none;
+          text-shadow: none;
+        }
+      }
+  
+      span { // Style for disabled links (first/last artifact)
+        color: darken($color-text, 30%);
+        cursor: default;
+      }
+    }
+  
+    // Specific alignment for older/newer links
+    .nav-older { text-align: left; }
+    .nav-newer { text-align: right; }
+  
+    @media (max-width: 600px) { // Stack nav items on small screens
+        .nav-item {
+            width: 100%;
+            text-align: center;
+        }
+    }
+  }
+  

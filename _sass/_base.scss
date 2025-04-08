@@ -1,0 +1,141 @@
+// Basic Reset (Simple version)
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-text-size-adjust: 100%; // Prevent adjustments after orientation changes.
+}
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+  font-family: $font-secondary;
+  font-weight: $base-font-weight;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary;
+  font-weight: $bold-font-weight;
+  color: $color-pastel-1; // Use a pastel for headings
+  margin-top: $spacing-unit * 1.5;
+  margin-bottom: $spacing-unit / 1.5; // Adjusted spacing
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+// Adjust smaller headings as needed
+
+// Paragraphs and Text Elements
+p {
+  margin-top: 0;
+  margin-bottom: $spacing-unit / 1.5;
+}
+
+strong, b {
+  font-weight: $bold-font-weight;
+  color: lighten($color-text, 15%); // Make bold text slightly brighter
+}
+
+em, i {
+  font-style: italic;
+  color: $color-pastel-2; // Use a different pastel for emphasis
+}
+
+// Links
+a {
+  color: $color-link;
+  text-decoration: none;
+  transition: color $base-transition-speed ease-in-out, text-shadow $base-transition-speed ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration: underline;
+    text-shadow: 0 0 6px rgba($color-neon-1, 0.6); // Subtle neon glow on hover
+    outline: none; // Remove default focus outline if providing other feedback
+  }
+}
+
+// Lists
+ul, ol {
+  margin-top: 0;
+  margin-bottom: $spacing-unit / 1.5;
+  padding-left: $spacing-unit * 1.2; // Indent lists
+
+  li {
+    margin-bottom: $spacing-unit / 3;
+  }
+}
+
+// Code Blocks and Inline Code
+code {
+  font-family: $font-primary;
+  background-color: rgba($color-muted-bold-2, 0.2);
+  color: $color-pastel-2; // Use pastel for inline code
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre {
+  font-family: $font-primary;
+  background-color: $color-shadow-deep; // Dark background for blocks
+  color: $color-text; // Base text color inside blocks
+  padding: $spacing-unit / 1.5;
+  margin-bottom: $spacing-unit / 1.5;
+  overflow-x: auto; // Handle long lines
+  border-radius: 4px;
+  border: 1px solid rgba($color-muted-bold-1, 0.3); // Subtle border
+
+  code {
+    background-color: transparent; // Reset background for code inside pre
+    padding: 0;
+    font-size: 1em; // Inherit pre font size
+    color: inherit; // Inherit pre text color
+  }
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $color-pastel-1; // Use main pastel for quote border
+  padding-left: $spacing-unit;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: $spacing-unit / 1.5;
+  font-style: italic;
+  color: darken($color-text, 10%); // Slightly darker text for quotes
+
+  p {
+    margin-bottom: 0; // Remove bottom margin for paragraphs inside blockquote
+  }
+}
+
+// Horizontal Rules
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba($color-muted-bold-1, 0), rgba($color-muted-bold-1, 0.75), rgba($color-muted-bold-1, 0));
+  margin: $spacing-unit * 2 0;
+}
+
+// Images (basic responsive)
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

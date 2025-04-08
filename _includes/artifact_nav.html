@@ -1,0 +1,37 @@
+{% assign sorted_artifacts = site.artifacts | sort: 'date' %}
+{% for artifact in sorted_artifacts %}
+  {% if artifact.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+    {% assign next_index = current_index | plus: 1 %}
+    {% assign prev_index = current_index | minus: 1 %}
+    {% if prev_index >= 0 %}
+      {% assign prev_artifact = sorted_artifacts[prev_index] %}
+    {% endif %}
+    {% if next_index < sorted_artifacts.size %}
+      {% assign next_artifact = sorted_artifacts[next_index] %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<nav class="artifact-navigation" aria-label="Artifact navigation">
+  <ul class="artifact-nav-list">
+    <li class="nav-item nav-older">
+      {% if prev_artifact %}
+        <a href="{{ prev_artifact.url | relative_url }}" rel="prev">
+          &larr; Older Finding: {{ prev_artifact.title | escape }}
+        </a>
+      {% else %}
+        <span>&larr; This is the oldest finding.</span>
+      {% endif %}
+    </li>
+    <li class="nav-item nav-newer">
+      {% if next_artifact %}
+        <a href="{{ next_artifact.url | relative_url }}" rel="next">
+          Newer Finding: {{ next_artifact.title | escape }} &rarr;
+        </a>
+      {% else %}
+        <span>This is the latest finding. &rarr;</span>
+      {% endif %}
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,71 @@
+// Centering Wrapper
+.wrapper {
+    max-width: $content-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  
+    // Ensure wrapper clears floats
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  // Site Header
+  .site-header {
+    background-color: darken($color-background, 3%); // Slightly darker than main bg
+    border-bottom: $texture-glass-border; // Use the glassy border
+    padding: $spacing-unit / 2 0;
+    margin-bottom: $spacing-unit * 1.5;
+  
+    .wrapper { // Apply wrapper styles within header
+      display: flex; // Simple flex for alignment
+      justify-content: center; // Center title by default
+      align-items: center;
+    }
+  
+    .site-title {
+      font-family: $font-primary;
+      font-size: 1.5em; // Prominent title
+      font-weight: $bold-font-weight;
+      color: $color-neon-2; // Use a neon for the main site title? Or pastel?
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px rgba($color-neon-2, 0.3); // Matching subtle glow
+  
+      &:hover,
+      &:focus {
+        color: lighten($color-neon-2, 10%);
+        text-decoration: none; // No underline for site title
+        text-shadow: 0 0 12px rgba($color-neon-2, 0.5);
+      }
+    }
+  }
+  
+  // Main Content Area
+  .site-content {
+    padding-bottom: $spacing-unit * 2; // Space above the footer
+    min-height: calc(100vh - 150px); // Basic sticky footer calculation (adjust height if header/footer change)
+  }
+  
+  // Site Footer
+  .site-footer {
+    background-color: darken($color-background, 3%);
+    border-top: $texture-glass-border;
+    padding: $spacing-unit 0;
+    margin-top: $spacing-unit * 2;
+    font-size: 0.9em;
+    color: darken($color-text, 20%);
+    text-align: center;
+  
+    .wrapper { // Apply wrapper styles within footer
+      // Footer content is usually simple text
+    }
+  
+    p {
+      margin: 0;
+    }
+  }
+  

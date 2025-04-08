@@ -1,0 +1,17 @@
+---
+layout: default # Inherits from the default layout
+---
+<article class="artifact-scroll">
+
+  <header class="artifact-header">
+    <h1 class="artifact-title">{{ page.title | escape }}</h1>
+    <p class="artifact-meta">Found: <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
+  </header>
+
+  <div class="artifact-content">
+    {{ content }} {# The actual artifact Markdown content goes here #}
+  </div>
+
+  {% include artifact_nav.html %} {# Newer/Older Navigation #}
+
+</article>

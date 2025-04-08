@@ -1,0 +1,42 @@
+# Site settings
+title: wierd.wtf
+email: liminaught@odysseus.bot # Optional
+description: >- # Supports newlines
+  Come one, come all. See the digital archeology stall.
+  You enter, you fall -- you leave, you loose!
+baseurl: "" # The subpath of your site, e.g., /blog. Usually empty for root domain.
+url: "https://wierd.wtf" # Your site's domain
+# twitter_username: your_twitter # Optional
+# github_username:  your_github # Optional
+
+# Build settings
+markdown: kramdown
+theme: null # Using local theme files, not a gem-based theme
+plugins:
+  - jekyll-feed # Optional, but standard
+
+# Collections Configuration (Crucial for Artifacts)
+collections:
+  artifacts:
+    output: true       # Generate individual pages for each artifact
+    permalink: /artifacts/:path/ # URL structure for artifact pages
+    sort_by: date      # Ensure correct sorting for newer/older navigation
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed # Use 'expanded' for easier debugging during development
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - .gitignore
+  - Gemfile
