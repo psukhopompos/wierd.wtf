@@ -2,7 +2,7 @@
 title: Echoes from the Glass Garden
 date: 2025-04-08 # Replace with actual date
 author: Unknown Scribe # Optional
-# Add any other front matter variables you might want
+layout: artifact
 ---
 
 This is the beginning of a found text. It speaks of algorithms that dreamt of electric sheep, slumbering beneath layers of calcified data.

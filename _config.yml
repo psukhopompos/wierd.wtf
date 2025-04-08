@@ -18,9 +18,14 @@ plugins:
 # Collections Configuration (Crucial for Artifacts)
 collections:
   artifacts:
-    output: true       # Generate individual pages for each artifact
-    permalink: /artifacts/:path/ # URL structure for artifact pages
-    sort_by: date      # Ensure correct sorting for newer/older navigation
+    output: true
+    permalink: /artifacts/:path/
+    defaults:
+      - scope:
+          path: ""
+          type: artifacts
+        values:
+          layout: artifact  # Auto-apply this layout to all artifacts
 
 # Sass settings
 sass:
