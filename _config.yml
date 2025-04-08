@@ -20,12 +20,12 @@ collections:
   artifacts:
     output: true
     permalink: /artifacts/:path/
-    defaults:
-      - scope:
-          path: ""
-          type: artifacts
-        values:
-          layout: artifact  # Auto-apply this layout to all artifacts
+defaults:
+  - scope:
+      path: "" # All files in the project
+      type: artifacts
+    values:
+      layout: artifact
 
 # Sass settings
 sass:
