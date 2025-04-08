@@ -23,7 +23,7 @@ title: wierd.wtf - Digital Archeology Stall
           </h2>
           <p class="preview-meta">Found: <time datetime="{{ artifact.date | date_to_xmlschema }}">{{ artifact.date | date: "%B %-d, %Y" }}</time></p>
           <div class="preview-excerpt">
-            {{ artifact.content | strip_html | truncatewords: 75 }} {# Show a part of the artifact #}
+            {{ artifact.content | strip_html | truncatewords: 75 }} <!-- Show a part of the artifact -->
           </div>
           <a href="{{ artifact.url | relative_url }}" class="read-more-link">Enter the Scroll &rarr;</a>
         </section>
